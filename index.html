@@ -422,8 +422,8 @@
             <div class="form-subscription-wrapper">
                 <p class="form-subscription-title"> Подпишитесь на рассылку</p>
             <form class="form-subscription">
-                <input class="form-subscription-input" type="email" name="mail" placeholder="E-mail" />
-                <button class="form-subscription-btn" type="button"> 
+                <input class="form-subscription-input" type="email" name="mail" placeholder="E-mail" required />
+                <button class="form-subscription-btn" type="submit"> 
                     Подписаться
                     <svg class="form-subscription-icon" width="24px" height="24px">
                        <use href="./images/sprite2.svg#icon-icon-send"></use>
@@ -451,7 +451,7 @@
            <div class="modal-form-contacts-wrapper">
             <label class="modal-form-label" for="name"> Имя </label>
             <div class="contact-info-wrapper">
-                <input class="contact-info-input" type="name" name="name" id="name"/>
+                <input class="contact-info-input" type="text" name="name" id="name" required/>
                 <svg class="contact-info-icon" width="18px" height="18px">
                     <use href="./images/sprite2.svg#icon-person-black-18dp-1"></use>
                 </svg>  
@@ -459,7 +459,7 @@
 
             <label class="modal-form-label" for="tel">Телефон</label>
             <div class="contact-info-wrapper">
-                <input class="contact-info-input" type="tel" name="phone-number" id="tel"/>
+                <input class="contact-info-input" type="tel" name="phone-number" id="tel" required/>
                 <svg class="contact-info-icon" width="18px" height="18px">
                      <use href="./images/sprite2.svg#icon-phone-black-18dp-1"></use>
                 </svg>
@@ -467,7 +467,7 @@
           
             <label class="modal-form-label" for="mail"> Почта  </label>
             <div class="contact-info-wrapper">
-                <input class="contact-info-input" type="email" name="mail" id="mail"/>
+                <input class="contact-info-input" type="email" name="mail" id="mail" required/>
                 <svg class="contact-info-icon" width="18px" height="18px">
                     <use href="./images/sprite2.svg#icon-email-black-18dp-1"></use>
                 </svg>
@@ -483,13 +483,12 @@
         
             <div class="checkbox-wrapper">
                 <input class="checkbox-input" type="checkbox" name="checkbox" id="checkbox">
-                <label class="checkbox-label" for="checkbox">
-                Соглашаюсь с рассылкой и принимаю 
-                <a class="link-contract" href="">Условия договора</a>
+                <label class="checkbox-label" for="checkbox"> Соглашаюсь с рассылкой и принимаю  &#160;
+                    <a class="link-contract" href="#">Условия договора</a>
                 </label>
             </div>
 
-            <button class="submit-btn" type="btn"> Отправить</button>
+            <button class="submit-btn" type="submit"> Отправить</button>
         </form>
         
         </div>
